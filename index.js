@@ -1,14 +1,11 @@
 const express = require("express");
-const { mongoConnect } = require("./forDb");
+require("dotenv").config();
 const PORT = process.env.PORT || 5555;
 const app = express();
 const cors = require("cors");
-const logicBot = require("./logic");
 const router = require("./router");
-require("dotenv").config();
 
 const startServer = async () => {
-  await mongoConnect();
   app.listen(PORT, () => {
     console.log("Server woke up");
   });

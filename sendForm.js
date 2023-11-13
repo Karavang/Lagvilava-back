@@ -3,8 +3,8 @@ const sendForm = async (req, res) => {
   const { body } = req;
 
   const verifyEmail = {
-    from: "SHETAGRI",
-    to: "shestak.t20@gmail.com",
+    from: "ETAJERKI",
+    to: "book1cases@gmail.com",
     subject: "Новый клиент оставил в модалке свои данные!",
     text: ` 
     Имя: ${body.name}

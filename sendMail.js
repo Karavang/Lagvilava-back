@@ -9,6 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 const sendEmail = async (body) => {
+  console.log(EMAILFROM, FORMODALKEY);
   const callback = function (error, data, response) {
     if (error) {
       console.error(error.message);
